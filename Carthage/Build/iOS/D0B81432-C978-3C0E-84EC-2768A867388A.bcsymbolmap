@@ -1,0 +1,58 @@
+BCSymbolMap Version: 2.0
+-[MBFingerTipWindow initWithCoder:]
+-[MBFingerTipWindow initWithFrame:]
+-[MBFingerTipWindow MBFingerTipWindow_commonInit]
+-[MBFingerTipWindow dealloc]
+-[MBFingerTipWindow overlayWindow]
+-[MBFingerTipWindow touchImage]
+-[MBFingerTipWindow setAlwaysShowTouches:]
+-[MBFingerTipWindow screenConnect:]
+-[MBFingerTipWindow screenDisconnect:]
+-[MBFingerTipWindow anyScreenIsMirrored]
+-[MBFingerTipWindow updateFingertipsAreActive]
+-[MBFingerTipWindow sendEvent:]
+-[MBFingerTipWindow scheduleFingerTipRemoval]
+-[MBFingerTipWindow cancelScheduledFingerTipRemoval]
+-[MBFingerTipWindow removeInactiveFingerTips]
+-[MBFingerTipWindow removeFingerTipWithHash:animated:]
+-[MBFingerTipWindow shouldAutomaticallyRemoveFingerTipForTouch:]
+-[MBFingerTipWindow setTouchImage:]
+-[MBFingerTipWindow touchAlpha]
+-[MBFingerTipWindow setTouchAlpha:]
+-[MBFingerTipWindow fadeDuration]
+-[MBFingerTipWindow setFadeDuration:]
+-[MBFingerTipWindow strokeColor]
+-[MBFingerTipWindow setStrokeColor:]
+-[MBFingerTipWindow fillColor]
+-[MBFingerTipWindow setFillColor:]
+-[MBFingerTipWindow alwaysShowTouches]
+-[MBFingerTipWindow setOverlayWindow:]
+-[MBFingerTipWindow active]
+-[MBFingerTipWindow setActive:]
+-[MBFingerTipWindow fingerTipRemovalScheduled]
+-[MBFingerTipWindow setFingerTipRemovalScheduled:]
+-[MBFingerTipWindow .cxx_destruct]
+-[MBFingerTipView timestamp]
+-[MBFingerTipView setTimestamp:]
+-[MBFingerTipView shouldAutomaticallyRemoveAfterTimeout]
+-[MBFingerTipView setShouldAutomaticallyRemoveAfterTimeout:]
+-[MBFingerTipView isFadingOut]
+-[MBFingerTipView setFadingOut:]
+-[MBFingerTipOverlayWindow rootViewController]
+_OBJC_IVAR_$_MBFingerTipWindow._overlayWindow
+_OBJC_IVAR_$_MBFingerTipWindow._touchImage
+_OBJC_IVAR_$_MBFingerTipWindow._alwaysShowTouches
+_OBJC_IVAR_$_MBFingerTipWindow._touchAlpha
+_OBJC_IVAR_$_MBFingerTipWindow._fadeDuration
+_OBJC_IVAR_$_MBFingerTipWindow._strokeColor
+_OBJC_IVAR_$_MBFingerTipWindow._fillColor
+_OBJC_IVAR_$_MBFingerTipWindow._active
+_OBJC_IVAR_$_MBFingerTipWindow._fingerTipRemovalScheduled
+_OBJC_IVAR_$_MBFingerTipView._timestamp
+_OBJC_IVAR_$_MBFingerTipView._shouldAutomaticallyRemoveAfterTimeout
+_OBJC_IVAR_$_MBFingerTipView._fadingOut
+Apple LLVM version 8.0.0 (clang-800.0.42.1)
+/Users/xielei/Desktop/ALDemo/Carthage/Checkouts/Fingertips/MBFingerTipWindow.m
+/Users/xielei/Desktop/ALDemo/Carthage/Checkouts/Fingertips
+/Users/xielei/Desktop/ALDemo/Carthage/Checkouts/Fingertips/MBFingerTipWindow.h
+/Users/xielei/Library/Caches/org.carthage.CarthageKit/DerivedData/Fingertips/v0.5.0/Build/Intermediates/Fingertips.build/Release-iphoneos/Fingertips.build/DerivedSources/Fingertips_vers.c
