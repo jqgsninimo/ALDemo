@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qUa-vH-BHb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Clock View Controller-->
+        <scene sceneID="LD0-JY-JzM">
+            <objects>
+                <viewController id="qUa-vH-BHb" customClass="ClockViewController" customModule="ALDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ktr-AY-y41"/>
+                        <viewControllerLayoutGuide type="bottom" id="YvP-v2-gjr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Vs-hw-5RQ">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vlm-NC-UKO">
+                                <rect key="frame" x="16" y="20" width="268" height="580"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6y6-CG-awq">
+                                        <rect key="frame" x="8" y="8" width="252" height="252"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mei-s2-CXJ" customClass="ClockView" customModule="ALDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="252" height="252"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="mei-s2-CXJ" secondAttribute="height" id="MEN-DF-d4R"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="6y6-CG-awq" secondAttribute="height" id="eHH-vz-3Xe"/>
+                                            <constraint firstItem="mei-s2-CXJ" firstAttribute="centerY" secondItem="6y6-CG-awq" secondAttribute="centerY" id="p9A-KF-Iu1"/>
+                                            <constraint firstItem="mei-s2-CXJ" firstAttribute="centerX" secondItem="6y6-CG-awq" secondAttribute="centerX" id="rrR-0j-av9"/>
+                                            <constraint firstItem="mei-s2-CXJ" firstAttribute="width" secondItem="6y6-CG-awq" secondAttribute="width" placeholder="YES" id="szM-qA-yJK"/>
+                                        </constraints>
+                                    </view>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.55000001192092896" minValue="0.10000000149011612" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TfW-a4-9e9">
+                                        <rect key="frame" x="6" y="268" width="256" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="htX-sw-Tqf"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="actionFromSlider:" destination="qUa-vH-BHb" eventType="valueChanged" id="674-ae-khj"/>
+                                        </connections>
+                                    </slider>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="R8a-M8-g9v">
+                                        <rect key="frame" x="8" y="306" width="252" height="266"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="482298853.78696299">
+                                            <!--2016-04-14 03:54:13 +0000-->
+                                        </date>
+                                        <connections>
+                                            <action selector="actionFromDatePicker:" destination="qUa-vH-BHb" eventType="valueChanged" id="RgC-tA-8cK"/>
+                                        </connections>
+                                    </datePicker>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YvP-v2-gjr" firstAttribute="top" secondItem="vlm-NC-UKO" secondAttribute="bottom" id="0gR-yj-2qC"/>
+                            <constraint firstItem="vlm-NC-UKO" firstAttribute="top" secondItem="Ktr-AY-y41" secondAttribute="bottom" id="7c7-l1-PSA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vlm-NC-UKO" secondAttribute="trailing" id="Q0K-fg-spc"/>
+                            <constraint firstItem="vlm-NC-UKO" firstAttribute="leading" secondItem="7Vs-hw-5RQ" secondAttribute="leadingMargin" id="jQm-ND-xfY"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="300" height="600"/>
+                    <connections>
+                        <outlet property="clockView" destination="mei-s2-CXJ" id="EBS-AD-69R"/>
+                        <outlet property="datePicker" destination="R8a-M8-g9v" id="xck-ze-Bqx"/>
+                        <outlet property="slider" destination="TfW-a4-9e9" id="dww-E5-68O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="br6-S8-V4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6" y="-55"/>
+        </scene>
+    </scenes>
+</document>

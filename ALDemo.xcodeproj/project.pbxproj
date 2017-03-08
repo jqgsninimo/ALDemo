@@ -15,6 +15,13 @@
 		D335C76D1E6D796600D5B3AD /* Fingertips.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D335C76C1E6D796600D5B3AD /* Fingertips.framework */; };
 		D335C7721E6D8A7E00D5B3AD /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = D335C7701E6D8A7E00D5B3AD /* Cartfile.resolved */; };
 		D335C7731E6D8A7E00D5B3AD /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = D335C7711E6D8A7E00D5B3AD /* Cartfile */; };
+		D335C8661E6E9EC3009FAB22 /* Scroll.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D335C8651E6E9EC3009FAB22 /* Scroll.storyboard */; };
+		D335C8681E6EA103009FAB22 /* Clock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D335C8671E6EA103009FAB22 /* Clock.storyboard */; };
+		D335C86A1E6EA1AA009FAB22 /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D335C8691E6EA1AA009FAB22 /* ClockViewController.swift */; };
+		D335C86C1E6EA1D3009FAB22 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D335C86B1E6EA1D3009FAB22 /* ClockView.swift */; };
+		D3B2D3461E6EAA6E0011F3FE /* TilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B2D3451E6EAA6E0011F3FE /* TilesViewController.swift */; };
+		D3B2D3481E6EB04F0011F3FE /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B2D3471E6EB04F0011F3FE /* Utility.swift */; };
+		D3B2D34A1E6EB54C0011F3FE /* Tiles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B2D3491E6EB54C0011F3FE /* Tiles.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,13 @@
 		D335C76C1E6D796600D5B3AD /* Fingertips.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fingertips.framework; path = Carthage/Build/iOS/Fingertips.framework; sourceTree = "<group>"; };
 		D335C7701E6D8A7E00D5B3AD /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
 		D335C7711E6D8A7E00D5B3AD /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		D335C8651E6E9EC3009FAB22 /* Scroll.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Scroll.storyboard; sourceTree = "<group>"; };
+		D335C8671E6EA103009FAB22 /* Clock.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Clock.storyboard; sourceTree = "<group>"; };
+		D335C8691E6EA1AA009FAB22 /* ClockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
+		D335C86B1E6EA1D3009FAB22 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		D3B2D3451E6EAA6E0011F3FE /* TilesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TilesViewController.swift; sourceTree = "<group>"; };
+		D3B2D3471E6EB04F0011F3FE /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		D3B2D3491E6EB54C0011F3FE /* Tiles.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tiles.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +77,19 @@
 		D335C7581E6D335E00D5B3AD /* ALDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D3B2D3451E6EAA6E0011F3FE /* TilesViewController.swift */,
+				D335C86B1E6EA1D3009FAB22 /* ClockView.swift */,
 				D335C7591E6D335E00D5B3AD /* AppDelegate.swift */,
 				D335C75B1E6D335E00D5B3AD /* ViewController.swift */,
 				D335C75D1E6D335E00D5B3AD /* Main.storyboard */,
 				D335C7601E6D335E00D5B3AD /* Assets.xcassets */,
 				D335C7621E6D335E00D5B3AD /* LaunchScreen.storyboard */,
 				D335C7651E6D335E00D5B3AD /* Info.plist */,
+				D335C8651E6E9EC3009FAB22 /* Scroll.storyboard */,
+				D335C8671E6EA103009FAB22 /* Clock.storyboard */,
+				D335C8691E6EA1AA009FAB22 /* ClockViewController.swift */,
+				D3B2D3471E6EB04F0011F3FE /* Utility.swift */,
+				D3B2D3491E6EB54C0011F3FE /* Tiles.storyboard */,
 			);
 			path = ALDemo;
 			sourceTree = "<group>";
@@ -123,6 +144,7 @@
 				TargetAttributes = {
 					D335C7551E6D335E00D5B3AD = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZG2CRAMJ77;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,10 +172,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3B2D34A1E6EB54C0011F3FE /* Tiles.storyboard in Resources */,
 				D335C7731E6D8A7E00D5B3AD /* Cartfile in Resources */,
 				D335C7641E6D335E00D5B3AD /* LaunchScreen.storyboard in Resources */,
 				D335C7721E6D8A7E00D5B3AD /* Cartfile.resolved in Resources */,
+				D335C8681E6EA103009FAB22 /* Clock.storyboard in Resources */,
 				D335C7611E6D335E00D5B3AD /* Assets.xcassets in Resources */,
+				D335C8661E6E9EC3009FAB22 /* Scroll.storyboard in Resources */,
 				D335C75F1E6D335E00D5B3AD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,7 +207,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D335C86A1E6EA1AA009FAB22 /* ClockViewController.swift in Sources */,
+				D335C86C1E6EA1D3009FAB22 /* ClockView.swift in Sources */,
+				D3B2D3481E6EB04F0011F3FE /* Utility.swift in Sources */,
 				D335C75C1E6D335E00D5B3AD /* ViewController.swift in Sources */,
+				D3B2D3461E6EAA6E0011F3FE /* TilesViewController.swift in Sources */,
 				D335C75A1E6D335E00D5B3AD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,14 +336,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ZG2CRAMJ77;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ALDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appleg.ALDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.applleeg.ALDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -325,14 +354,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ZG2CRAMJ77;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ALDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appleg.ALDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.applleeg.ALDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -357,6 +386,7 @@
 				D335C76A1E6D335E00D5B3AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
