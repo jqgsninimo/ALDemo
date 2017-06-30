@@ -19,9 +19,14 @@
 		D335C8681E6EA103009FAB22 /* Clock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D335C8671E6EA103009FAB22 /* Clock.storyboard */; };
 		D335C86A1E6EA1AA009FAB22 /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D335C8691E6EA1AA009FAB22 /* ClockViewController.swift */; };
 		D335C86C1E6EA1D3009FAB22 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D335C86B1E6EA1D3009FAB22 /* ClockView.swift */; };
+		D35907B21F06333400E2A5DF /* Split.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D35907B11F06333400E2A5DF /* Split.storyboard */; };
+		D35907B41F06337000E2A5DF /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35907B31F06337000E2A5DF /* SplitViewController.swift */; };
+		D3788C471E7BB4D50092BE29 /* LayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3788C461E7BB4D50092BE29 /* LayoutViewController.swift */; };
 		D3B2D3461E6EAA6E0011F3FE /* TilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B2D3451E6EAA6E0011F3FE /* TilesViewController.swift */; };
 		D3B2D3481E6EB04F0011F3FE /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B2D3471E6EB04F0011F3FE /* Utility.swift */; };
 		D3B2D34A1E6EB54C0011F3FE /* Tiles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B2D3491E6EB54C0011F3FE /* Tiles.storyboard */; };
+		D3D89C811E7236710038C42D /* Layout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D89C801E7236710038C42D /* Layout.storyboard */; };
+		D3D89C8A1E7248080038C42D /* Layout.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D89C891E7248080038C42D /* Layout.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,9 +44,14 @@
 		D335C8671E6EA103009FAB22 /* Clock.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Clock.storyboard; sourceTree = "<group>"; };
 		D335C8691E6EA1AA009FAB22 /* ClockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
 		D335C86B1E6EA1D3009FAB22 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		D35907B11F06333400E2A5DF /* Split.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Split.storyboard; sourceTree = "<group>"; };
+		D35907B31F06337000E2A5DF /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		D3788C461E7BB4D50092BE29 /* LayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutViewController.swift; sourceTree = "<group>"; };
 		D3B2D3451E6EAA6E0011F3FE /* TilesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TilesViewController.swift; sourceTree = "<group>"; };
 		D3B2D3471E6EB04F0011F3FE /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		D3B2D3491E6EB54C0011F3FE /* Tiles.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tiles.storyboard; sourceTree = "<group>"; };
+		D3D89C801E7236710038C42D /* Layout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Layout.storyboard; sourceTree = "<group>"; };
+		D3D89C891E7248080038C42D /* Layout.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Layout.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,19 +87,18 @@
 		D335C7581E6D335E00D5B3AD /* ALDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D3B2D3451E6EAA6E0011F3FE /* TilesViewController.swift */,
-				D335C86B1E6EA1D3009FAB22 /* ClockView.swift */,
+				D3D89C831E723B3D0038C42D /* Scroll */,
+				D3D89C821E723B150038C42D /* Clock */,
+				D3D89C841E723B5D0038C42D /* Tiles */,
+				D3D89C851E723B760038C42D /* Layout */,
+				D35907B01F06322A00E2A5DF /* Split */,
 				D335C7591E6D335E00D5B3AD /* AppDelegate.swift */,
 				D335C75B1E6D335E00D5B3AD /* ViewController.swift */,
 				D335C75D1E6D335E00D5B3AD /* Main.storyboard */,
 				D335C7601E6D335E00D5B3AD /* Assets.xcassets */,
 				D335C7621E6D335E00D5B3AD /* LaunchScreen.storyboard */,
 				D335C7651E6D335E00D5B3AD /* Info.plist */,
-				D335C8651E6E9EC3009FAB22 /* Scroll.storyboard */,
-				D335C8671E6EA103009FAB22 /* Clock.storyboard */,
-				D335C8691E6EA1AA009FAB22 /* ClockViewController.swift */,
 				D3B2D3471E6EB04F0011F3FE /* Utility.swift */,
-				D3B2D3491E6EB54C0011F3FE /* Tiles.storyboard */,
 			);
 			path = ALDemo;
 			sourceTree = "<group>";
@@ -109,6 +118,52 @@
 				D335C7711E6D8A7E00D5B3AD /* Cartfile */,
 			);
 			name = Carthage;
+			sourceTree = "<group>";
+		};
+		D35907B01F06322A00E2A5DF /* Split */ = {
+			isa = PBXGroup;
+			children = (
+				D35907B11F06333400E2A5DF /* Split.storyboard */,
+				D35907B31F06337000E2A5DF /* SplitViewController.swift */,
+			);
+			name = Split;
+			sourceTree = "<group>";
+		};
+		D3D89C821E723B150038C42D /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				D335C8671E6EA103009FAB22 /* Clock.storyboard */,
+				D335C8691E6EA1AA009FAB22 /* ClockViewController.swift */,
+				D335C86B1E6EA1D3009FAB22 /* ClockView.swift */,
+			);
+			name = Clock;
+			sourceTree = "<group>";
+		};
+		D3D89C831E723B3D0038C42D /* Scroll */ = {
+			isa = PBXGroup;
+			children = (
+				D335C8651E6E9EC3009FAB22 /* Scroll.storyboard */,
+			);
+			name = Scroll;
+			sourceTree = "<group>";
+		};
+		D3D89C841E723B5D0038C42D /* Tiles */ = {
+			isa = PBXGroup;
+			children = (
+				D3B2D3451E6EAA6E0011F3FE /* TilesViewController.swift */,
+				D3B2D3491E6EB54C0011F3FE /* Tiles.storyboard */,
+			);
+			name = Tiles;
+			sourceTree = "<group>";
+		};
+		D3D89C851E723B760038C42D /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				D3788C461E7BB4D50092BE29 /* LayoutViewController.swift */,
+				D3D89C801E7236710038C42D /* Layout.storyboard */,
+				D3D89C891E7248080038C42D /* Layout.xcassets */,
+			);
+			name = Layout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,13 +227,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3D89C8A1E7248080038C42D /* Layout.xcassets in Resources */,
 				D3B2D34A1E6EB54C0011F3FE /* Tiles.storyboard in Resources */,
+				D3D89C811E7236710038C42D /* Layout.storyboard in Resources */,
 				D335C7731E6D8A7E00D5B3AD /* Cartfile in Resources */,
 				D335C7641E6D335E00D5B3AD /* LaunchScreen.storyboard in Resources */,
 				D335C7721E6D8A7E00D5B3AD /* Cartfile.resolved in Resources */,
 				D335C8681E6EA103009FAB22 /* Clock.storyboard in Resources */,
 				D335C7611E6D335E00D5B3AD /* Assets.xcassets in Resources */,
 				D335C8661E6E9EC3009FAB22 /* Scroll.storyboard in Resources */,
+				D35907B21F06333400E2A5DF /* Split.storyboard in Resources */,
 				D335C75F1E6D335E00D5B3AD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,9 +268,11 @@
 				D335C86A1E6EA1AA009FAB22 /* ClockViewController.swift in Sources */,
 				D335C86C1E6EA1D3009FAB22 /* ClockView.swift in Sources */,
 				D3B2D3481E6EB04F0011F3FE /* Utility.swift in Sources */,
+				D3788C471E7BB4D50092BE29 /* LayoutViewController.swift in Sources */,
 				D335C75C1E6D335E00D5B3AD /* ViewController.swift in Sources */,
 				D3B2D3461E6EAA6E0011F3FE /* TilesViewController.swift in Sources */,
 				D335C75A1E6D335E00D5B3AD /* AppDelegate.swift in Sources */,
+				D35907B41F06337000E2A5DF /* SplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,10 +402,12 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ALDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.applleeg.ALDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -360,10 +422,12 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ALDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.applleeg.ALDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

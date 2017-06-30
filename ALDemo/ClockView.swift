@@ -98,8 +98,8 @@ class ClockView: UIView {
             hourLabel.heightAnchor.constraint(equalTo: self.dialView.heightAnchor, multiplier: self.hourLabelHeightRatio).isActive = true
             hourLabel.widthAnchor.constraint(equalTo: hourLabel.heightAnchor, multiplier: 2).isActive = true
             
-            let centerXMultiplier = 1 + (1 - self.hourLabelHeightRatio * 2) * sin(CGFloat(M_PI) * 2 / 12 * CGFloat(hour))
-            let centerYMultiplier = 1 - (1 - self.hourLabelHeightRatio * 2) * cos(CGFloat(M_PI) * 2 / 12 * CGFloat(hour))
+            let centerXMultiplier = 1 + (1 - self.hourLabelHeightRatio * 2) * sin(CGFloat.pi * 2 / 12 * CGFloat(hour))
+            let centerYMultiplier = 1 - (1 - self.hourLabelHeightRatio * 2) * cos(CGFloat.pi * 2 / 12 * CGFloat(hour))
             NSLayoutConstraint(item: hourLabel, attribute: .centerX, relatedBy: .equal, toItem: self.centerView, attribute: .centerX, multiplier: centerXMultiplier, constant: 0).isActive = true
             NSLayoutConstraint(item: hourLabel, attribute: .centerY, relatedBy: .equal, toItem: self.centerView, attribute: .centerY, multiplier: centerYMultiplier, constant: 0).isActive = true
             
@@ -146,7 +146,7 @@ class ClockView: UIView {
         self.centerView.backgroundColor = color.foreground
         self.hourLabels.forEach { $0.textColor = color.foreground }
         
-        self.hourHandView.transform = CGAffineTransform(rotationAngle: (CGFloat(hour!) * 60 + CGFloat(minute!)) / (12 * 60) * CGFloat(M_PI) * 2)
-        self.minuteHandView.transform = CGAffineTransform(rotationAngle: CGFloat(minute!) / 60 * CGFloat(M_PI) * 2)
+        self.hourHandView.transform = CGAffineTransform(rotationAngle: (CGFloat(hour!) * 60 + CGFloat(minute!)) / (12 * 60) * CGFloat.pi * 2)
+        self.minuteHandView.transform = CGAffineTransform(rotationAngle: CGFloat(minute!) / 60 * CGFloat.pi * 2)
     }
 }
